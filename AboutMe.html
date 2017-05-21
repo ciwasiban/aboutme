@@ -10,16 +10,23 @@ img {
     position: absolute;
     top: 0; bottom:0; left: 0; right:0;
     margin: auto;
+    max-width: 94%;
+    max-height: 94%;
 }
 </style>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(function(){
+    // nothing
+});
+</script>
 </head>
 
 <body>
 <div data-role="page" class="jqm-demos" id="myPage">
     <div role="main" class="ui-content">
-        <img src="images/AboutMe.jpg" width="51%">
+        <img id="ImageAboutMe" src="images/AboutMe.jpg">
     </div>
 </div>
 </body>
