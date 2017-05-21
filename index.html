@@ -23,6 +23,8 @@ $(function(){
   ];
   var i = Math.floor((Math.random() * helloWord.length));
   $('#helloWord').html("大大您好, 你知道嗎? " + helloWord[i]);
+
+  $("#UrlAboutMe").attr("href","./AboutMe.html?_t=" + Date.now());
 });
 </script>
 </head>
@@ -1023,7 +1025,7 @@ $(function(){
     </div>
     <div data-role="footer">
         <h4>
-            <a href="AboutMe.html">Ciwas Iban</a> 感謝您的使用，祝您使用愉快！
+            <a href="#" id="UrlAboutMe">Ciwas Iban</a> 感謝您的使用，祝您使用愉快！
         </h4>
         
     </div><!-- /footer -->
